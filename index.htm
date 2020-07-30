@@ -1,0 +1,42 @@
+<html>
+    <head>
+        
+        <style>
+            input[type=submit]{
+                background-color: #669999;
+                border: none;
+                color: white;
+                padding: 8px 16px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            input[type=text]{
+                background-color: white;
+                border: 2px solid #334d4d;
+                color: black;
+                padding: 8px 16px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            h1 {
+                text-align: center;
+                color: #476b6b;
+            }
+            body
+            {background-color: #c4d1d1; }
+            </style>
+    </head>
+    <center>
+    <body>
+        
+        <form name="myForm" action = "http://127.0.0.1:8081/result" method = "GET">
+            <h1>Appathon NTUA</h1>
+            <b>Medicines</b>: <input type = "text" name = "meds" required>
+            <input type = "submit" value = "Search">
+            <p>Please enter list of medicines (medicine1,medicine2,...) </p>        
+        </form>
+    </body>
+</center>
+</html>

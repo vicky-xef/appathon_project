@@ -1,0 +1,59 @@
+
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin:50px;
+}
+body {
+    background-color: #c4d1d1; 
+}
+caption{
+    display: table-caption;
+    text-align: center;
+    caption-side: top;
+    color: #476b6b;
+    font-size: 20px;
+}
+</style>
+</head>
+
+<table class="left", style="float: left; width:50%">
+    <caption><b>Articles and Journals</b></caption>
+<thead>   
+    <tr>
+        <th style="text-align:center">Article</th>
+        <th style="text-align:center">Journal</th>
+        <th style="text-align:center">Medicines</th>        
+    </tr>
+</thead>
+<tbody>
+    {{#each meds}}
+    <tr>
+        <td style="text-align:center">{{article}}</td>
+        <td style="text-align:center">{{journal}}</td>
+        <td style="text-align:center">{{medicines}}</td>
+    </tr>
+    {{/each}}<thead>
+</tbody></table>
+<table class="left", style="float: left; width:30%;">
+     <caption><b>Number of Articles per Year</b></caption>
+<thead>     
+    <tr>
+        <th style="text-align:center">Year</th>
+        <th style="text-align:center">Number of Articles</th>      
+    </tr>
+</thead>
+<tbody>
+    {{#each years}}
+    <tr>
+        <td style="text-align:center">{{year}}</td>
+        <td style="text-align:center">{{number}}</td>
+    </tr>
+    {{/each}}
+
+</tbody>
+
+</table>
+
