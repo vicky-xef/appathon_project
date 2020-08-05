@@ -17,5 +17,8 @@ npm install express-handlebars
 npm install csv-parser
 ```
 
+### run
+`node main.js`
+
 ### url σελίδας 
 `http://127.0.0.1:8081/`
